@@ -1,0 +1,37 @@
+body {
+  font-family: Roboto, Open Sans, Helvetica Neue, 'Noto Sans Armenian', 'Noto Sans Bengali', 'Noto Sans Cherokee', 'Noto Sans Devanagari', 'Noto Sans Ethiopic', 'Noto Sans Georgian', 'Noto Sans Hebrew', 'Noto Sans Kannada', 'Noto Sans Khmer', 'Noto Sans Lao', 'Noto Sans Osmanya', 'Noto Sans Tamil', 'Noto Sans Telugu', 'Noto Sans Thai', sans-serif;
+  background-color: #edeef0;
+
+}
+
+.container {
+  max-width: 990px;
+  /* ширина контента+ падинги */
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+}
+
+@media(max-width: 992px) {
+  .container {
+      max-width: 750px;
+  }
+
+}
+
+@media(max-width: 767px) {
+  .container {
+      max-width: none;
+  }
+
+}
+
+.invisible {
+  display: none !important;
+}
+
+
+.page_layout {
+  display: flex;
+  padding-top: 15px;
+}

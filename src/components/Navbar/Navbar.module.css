@@ -1,0 +1,36 @@
+.navbar {
+    width: 150px;
+    margin-right: 16px;
+}
+
+.nav {
+
+}
+
+.list {
+
+}
+
+.item {
+    border-radius: 4px;
+}
+
+.item:hover {
+    background-color:#dce1e6;
+}
+
+.item_link {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+
+.item_icon {
+    width: 21px;
+    filter: brightness(0) saturate(100%) invert(47%) sepia(60%) saturate(5886%) hue-rotate(207deg) brightness(100%) contrast(85%);
+    margin-right: 10px;
+}
+
+.item_title {
+    font-size: 13px;
+}
