@@ -1,5 +1,6 @@
 .navbar {
     width: 150px;
+    padding-top: 15px;
     margin-right: 16px;
 }
 
@@ -19,18 +20,18 @@
     background-color:#dce1e6;
 }
 
-.item_link {
+.item__link {
     display: flex;
     align-items: center;
     padding: 6px;
 }
 
-.item_icon {
+.item__icon {
     width: 21px;
     filter: brightness(0) saturate(100%) invert(47%) sepia(60%) saturate(5886%) hue-rotate(207deg) brightness(100%) contrast(85%);
     margin-right: 10px;
 }
 
-.item_title {
+.item__title {
     font-size: 13px;
 }

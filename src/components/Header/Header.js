@@ -6,10 +6,10 @@ const Header = () => {
       <>
       <header className= {s.bg}>
           <div className="container">
-              <div className= {s.conten_box}>
-                    <div className= {s.logo_container}>
-                        <a href="/" className={s.logo_link}>
-                            <img src={logo} alt="" className= {s.logo_img}/>
+              <div className= {s.contentBox}>
+                    <div className= {s.logo__container}>
+                        <a href="/" className={s.logo__link}>
+                            <img src={logo} alt="" className= {s.logo__img}/>
                         </a>
                     </div>   
               </div>        

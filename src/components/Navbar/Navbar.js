@@ -13,33 +13,33 @@ const Navbar = () => {
             <nav className= {s.nav}>
                 <ul className= {s.list}>
                     <li className={s.item}>
-                        <a href="/" className={s.item_link}>
-                            <img src={profileIcon} alt="" className={s.item_icon}/>
-                            <span className={s.item_title}>Профиль</span>
+                        <a href="/" className={s.item__link}>
+                            <img src={profileIcon} alt="" className={s.item__icon}/>
+                            <span className={s.item__title}>Профиль</span>
                         </a>
                     </li>     
                     <li className={s.item}>
-                        <a href="/" className={s.item_link}>
-                            <img src={messagesIcon} alt="" className={s.item_icon}/>
-                            <span className={s.item_title}>Сообщения</span>
+                        <a href="/" className={s.item__link}>
+                            <img src={messagesIcon} alt="" className={s.item__icon}/>
+                            <span className={s.item__title}>Сообщения</span>
                         </a>
                     </li> 
                     <li className={s.item}>
-                        <a href="/" className={s.item_link}>
-                            <img src={newsIcon} alt="" className={s.item_icon}/>
-                            <span className={s.item_title}>Новости</span>
+                        <a href="/" className={s.item__link}>
+                            <img src={newsIcon} alt="" className={s.item__icon}/>
+                            <span className={s.item__title}>Новости</span>
                         </a>
                     </li> 
                     <li className={s.item}>
-                        <a href="/" className={s.item_link}>
-                            <img src={musicIcon} alt="" className={s.item_icon}/>
-                            <span className={s.item_title}>Музыка</span>
+                        <a href="/" className={s.item__link}>
+                            <img src={musicIcon} alt="" className={s.item__icon}/>
+                            <span className={s.item__title}>Музыка</span>
                         </a>
                     </li> 
                     <li className={s.item}>
-                        <a href="/" className={s.item_link}>
-                            <img src={settingsIcon} alt="" className={s.item_icon}/>
-                            <span className={s.item_title}>Настройки</span>
+                        <a href="/" className={s.item__link}>
+                            <img src={settingsIcon} alt="" className={s.item__icon}/>
+                            <span className={s.item__title}>Настройки</span>
                         </a>
                     </li>  
                 </ul>

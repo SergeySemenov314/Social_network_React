@@ -1,0 +1,52 @@
+/* Белая оболочка блоков */
+.pageBlock {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 0 #d3d9de, 0 0 0 1px #e7e8ec;
+    padding: 15px;
+    margin: 15px 0 0;
+}
+
+.mainBox {}
+
+.bannerWrapper {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 10px;
+}
+
+.bannerImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info {
+    display: flex;
+}
+
+.info__avatarWrapper {
+    width: 60px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.avatarImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info__textContainer {}
+
+.info__userName {}
+
+.info__userBirthday {}
+
+.info__userCity {}
+
+.info__userEducation {}
+
+.info__userWebsite {}

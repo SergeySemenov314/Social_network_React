@@ -1,10 +1,11 @@
 import s from './Main.module.css';
-import Navbar from '../Navbar/Navbar';
+import Profile from '../Profile/Profile';
 
 const Main = () => {
     return (
       <>
-        <main>
+        <main className = {s.main}>
+          <Profile />
          
         </main>
       </>
