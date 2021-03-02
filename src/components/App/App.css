@@ -34,3 +34,19 @@ body {
 .page_layout {
   display: flex;
 }
+
+.main {
+  width: 795px;
+
+}
+
+/* Белая оболочка блоков */
+.pageBlock {
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 0 #d3d9de, 0 0 0 1px #e7e8ec;
+  padding: 15px;
+  margin: 15px 0 0;
+}
+
+

@@ -5,6 +5,7 @@ import musicIcon from '../../images/Sidebar/icons/music.png';
 import newsIcon from '../../images/Sidebar/icons/news.png';
 import messagesIcon from '../../images/Sidebar/icons/messages.png';
 import settingsIcon from '../../images/Sidebar/icons/settings.png';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -13,16 +14,16 @@ const Navbar = () => {
             <nav className= {s.nav}>
                 <ul className= {s.list}>
                     <li className={s.item}>
-                        <a href="/" className={s.item__link}>
+                        <NavLink to="/profile" className={s.item__link}>
                             <img src={profileIcon} alt="" className={s.item__icon}/>
                             <span className={s.item__title}>Профиль</span>
-                        </a>
+                        </NavLink>
                     </li>     
                     <li className={s.item}>
-                        <a href="/" className={s.item__link}>
+                        <NavLink to="/dialogs" className={s.item__link}>
                             <img src={messagesIcon} alt="" className={s.item__icon}/>
                             <span className={s.item__title}>Сообщения</span>
-                        </a>
+                        </NavLink>
                     </li> 
                     <li className={s.item}>
                         <a href="/" className={s.item__link}>
@@ -31,16 +32,16 @@ const Navbar = () => {
                         </a>
                     </li> 
                     <li className={s.item}>
-                        <a href="/" className={s.item__link}>
+                        <NavLink to="/" className={s.item__link}>
                             <img src={musicIcon} alt="" className={s.item__icon}/>
                             <span className={s.item__title}>Музыка</span>
-                        </a>
+                        </NavLink>
                     </li> 
                     <li className={s.item}>
-                        <a href="/" className={s.item__link}>
+                        <NavLink to="/" className={s.item__link}>
                             <img src={settingsIcon} alt="" className={s.item__icon}/>
                             <span className={s.item__title}>Настройки</span>
-                        </a>
+                        </NavLink>
                     </li>  
                 </ul>
             </nav>

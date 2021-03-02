@@ -1,0 +1,57 @@
+.dialogs {
+    display: flex;
+}
+
+.dialogsContainer {
+    width: 160px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin: 15px 15px 0 0;
+    box-shadow: 0 1px 0 0 #d3d9de, 0 0 0 1px #e7e8ec;
+    border-radius: 4px;
+    background: white;
+    flex-shrink: 0;
+    align-self: flex-start;
+}
+
+.dialogsHeading{
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 9px;
+    margin-left: 20px;
+
+}
+
+.messages {
+    min-height: calc(100vh - 80px);
+    max-height: calc(100vh - 80px);
+    flex-grow: 1;
+    border-radius: 2px;
+    background-color: #fff;
+    margin-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+ 
+}
+
+/* .messages__inner {
+
+} */
+
+.notificationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 80px);
+}
+
+.notificationText {
+    font-size: 13px;
+    font-weight: 400;
+    color: #656565;
+
+}

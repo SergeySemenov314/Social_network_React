@@ -1,0 +1,34 @@
+
+.message {
+    display: flex;
+    margin-bottom: 11px;
+}
+
+.message__authorPhotoWrapper {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.message__authorPhoto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.message__wrapper{}
+
+.message__authorName {
+    font-size: 12.5px;
+    font-weight:700;
+    color:#2a5885;
+    margin-bottom: 2px;
+}
+
+.message__text {
+    font-size: 13px;
+}
