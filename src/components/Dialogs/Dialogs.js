@@ -1,14 +1,13 @@
 import s from './Dialogs.module.css';
 import { useParams } from 'react-router-dom';
-import data from '../../data.json';
 import DialogItem from './DialogItem/DialogItem';
-import Message from './Message/Message';
+import Messages from './Messages/Messages';
 
 
-const Dialogs = () => {
-  let dialogsList = data.dialogsList;
+const Dialogs = (props) => {
+  let dialogsList = props.state.dialogsList;
   let {currentUserId} = useParams();
-  let messages = data.messages.users[currentUserId];
+  let userMessages = props.state.users[currentUserId];
 
     return (
       <>
@@ -21,21 +20,7 @@ const Dialogs = () => {
               )}
             </ul>      
           </div>
-          {/* <div className={s.messages__inner}></div> */}
-          
-           
-            <div className={s.messages + ' pageBlock'}>
-              {messages
-              ?   messages.map((item, index) =>
-                    <Message currentMessage = {item} key  = {index} />
-                  )
-              : <div className={s.notificationContainer}>
-                  <p className = {s.notificationText}>Выберите диалог для отображения</p>
-                </div>
-            }       
-       
-            </div>
-
+          <Messages userMessages = {userMessages} />
       </div>
        
        

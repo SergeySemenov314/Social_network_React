@@ -1,5 +1,4 @@
 import s from './Message.module.css';
-// import authorPhoto from '../../../images/Profile/profile-avatar.jpg';
 
 
 const Message = (props) => {

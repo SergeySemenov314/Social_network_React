@@ -4,26 +4,24 @@ import Header from '../Header/Header';
 import Navbar from '../Navbar/Navbar';
 import Profile from '../Profile/Profile';
 import Dialogs from '../Dialogs/Dialogs';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 
-const App = () => {
+const App = (props) => {
   return (
     <>
-      <BrowserRouter>
         <Header />
           <div className="container">
             <div className="page_layout">
               <Navbar />
               <main className = 'main'>
-                <Route exact path = '/' component = {Profile}/>
-                <Route path = '/profile' component = {Profile}/>
-                <Route exact path = '/dialogs' component = {Dialogs}/>
-                <Route path = '/dialogs/:currentUserId' component = {Dialogs}/>
+                <Route exact path = '/' render = { () => <Profile state = {props.state.profilePage} /> } />
+                <Route path = '/profile' render = { () => <Profile state = {props.state.profilePage} /> } />
+                <Route exact path = '/dialogs' render = { () => <Dialogs state = {props.state.dialogsPage}/>} />
+                <Route path = '/dialogs/:currentUserId' render = { () => <Dialogs state = {props.state.dialogsPage}/>}  />
               </main>
             </div> 
           </div>
-      </BrowserRouter>
     </>
   );
 }

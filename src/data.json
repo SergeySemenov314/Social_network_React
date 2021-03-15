@@ -1,4 +1,25 @@
 {
+    "profileData":
+        {
+            "profilePosts":
+                [
+                    {
+                        "id": 1,
+                        "postText": "Привет всем! Это мой первый пост."
+                    },
+                    {
+                        "id": 2,
+                        "postText": "Второй пост."
+                    },
+                    {
+                        "id": 3,
+                        "postText": "Третий пост."
+                    }
+
+                ]
+
+        },
+
     "dialogsList":
         [
             {
