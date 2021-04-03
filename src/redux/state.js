@@ -1,3 +1,4 @@
+
 let state = {
     profilePage:{
             posts:[
@@ -14,6 +15,7 @@ let state = {
                         "postText": "Третий пост."
                     }
             ],
+            newPostText:'',
 
     },
     dialogsPage:{
@@ -245,6 +247,29 @@ let state = {
         }
         
     }
+}
+
+let rerenderEntireTree = () => {
+    console.log('State changed');
+}
+
+export let addPost = () => {
+    let newPost = {
+        id: 4,
+        postText: state.profilePage.newPostText
+    }
+    state.profilePage.posts.push(newPost);
+    state.profilePage.newPostText = '';
+    rerenderEntireTree(state);
+}
+
+export let updateNewPostText = (newPostText) => {
+    state.profilePage.newPostText = newPostText;
+    rerenderEntireTree(state);
+}
+
+export const subscribe = (observer) => {
+    rerenderEntireTree = observer;
 }
 
 export default state;

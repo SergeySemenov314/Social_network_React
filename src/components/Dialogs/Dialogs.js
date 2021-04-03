@@ -5,9 +5,9 @@ import Messages from './Messages/Messages';
 
 
 const Dialogs = (props) => {
-  let dialogsList = props.state.dialogsList;
+  let dialogsList = props.dialogsPage.dialogsList;
   let {currentUserId} = useParams();
-  let userMessages = props.state.users[currentUserId];
+  let userMessages = props.dialogsPage.users[currentUserId];
 
     return (
       <>
